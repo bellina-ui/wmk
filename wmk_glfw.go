@@ -1,4 +1,4 @@
-package hal_glfw
+package wmk
 
 import (
 	"fmt"
@@ -11,7 +11,7 @@ import (
 var g_window_left, g_window_top int
 var g_user_on_tick func()
 
-// hal_glfw exports these variables for use by the user of the library
+// wmk exports these variables for use by the user of the library
 var Window_Width, Window_Height int
 var Mouse_X, Mouse_Y int
 
@@ -81,7 +81,7 @@ func Loop(title string) {
 
 	glfw.Terminate()
 
-	fmt.Println("(-) GLFW Uninitialized (hal_glfw)")
+	fmt.Println("(-) GLFW Uninitialized (wmk)")
 }
 
 

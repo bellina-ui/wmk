@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/bellina-ui/hal-glfw"
+	"github.com/bellina-ui/wmk"
 	gl3 "github.com/chsc/gogl/gl33"
 	"github.com/shibukawa/nanovgo"
 	"github.com/shibukawa/nanovgo/sample/demo"
@@ -73,11 +73,11 @@ func on_resize(a, b int) {
 }
 
 func main() {
-	hal_glfw.Init(100, 100, 800, 600)
+	wmk.Init(100, 100, 800, 600)
 
-	hal_glfw.Set_Callbacks(on_after_gl_initialized, on_loop, on_before_window_delete, on_resize, nil, nil, nil)
+	wmk.Set_Callbacks(on_after_gl_initialized, on_loop, on_before_window_delete, on_resize, nil, nil, nil)
 
-	hal_glfw.Loop("Simple Jack!")
+	wmk.Loop("Simple Jack!")
 }
 
 func load_demo_data(ctx *nanovgo.Context) *demo.DemoData {

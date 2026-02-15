@@ -1,4 +1,4 @@
-module github.com/bellina-ui/hal-glfw
+module github.com/bellina-ui/wmk
 
 go 1.25
 

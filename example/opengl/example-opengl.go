@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/bellina-ui/hal-glfw"
+	"github.com/bellina-ui/wmk"
 	gl3 "github.com/chsc/gogl/gl33"
 	"runtime"
 )
@@ -34,9 +34,9 @@ func init() {
 }
 
 func main() {
-	hal_glfw.Init(100, 100, 800, 600)
+	wmk.Init(100, 100, 800, 600)
 
-	hal_glfw.Set_Callbacks(on_after_gl_initialized, on_loop, nil, on_resize, nil, nil, nil)
+	wmk.Set_Callbacks(on_after_gl_initialized, on_loop, nil, on_resize, nil, nil, nil)
 
-	hal_glfw.Loop("Hello, OpenGL!")
+	wmk.Loop("Hello, OpenGL!")
 }

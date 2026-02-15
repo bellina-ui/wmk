@@ -1,14 +1,19 @@
-# Package `hal-glfw`
+# Package `wmk`
 
 Gives GoLang applications a Window with an OpenGL (glfw) context with callbacks for Mouse and Keyboard.
 
+**wmk** stands for "Windows Mouse Key"
+
 # Installation
 
-`go get -u github.com/bellina-ui/hal-glfw`
+`go get -u github.com/bellina-ui/wmk`
 
-# why does hal-glfw exist?
+# why does `wmk` exist?
 
-`hal-glfw` is used by the `Bellina UI Library`
+`wmk` will be used by `hal-wmk` package to implement `hal` interface.
+
+`hal-wmk` is used by the `Bellina UI Library`
+For examples and sample usage visit `github.com/bellina-ui/hal-wmk`
 
 # usage
 
@@ -19,7 +24,7 @@ runtime.LockOSThread() must be called in init().
 package main
 
 import (
-	"github.com/bellina-ui/hal_glfw"
+	"github.com/bellina-ui/wmk"
 	"runtime"
 )
 
@@ -74,9 +79,9 @@ func main() {
 
 # running the examples
 ```
- go run .\hal-glfw\example\simple\example-simple.go
- go run .\hal-glfw\example\opengl\example-opengl.go
+ go run .\wmk\example\simple\example-simple.go
+ go run .\wmk\example\opengl\example-opengl.go
 
  // this WILL NOT run on your machine until you read the comment on line 87 in "example-svg.go"
- go run .\hal-glfw\example\svg\example-svg.go
+ go run .\wmk\example\svg\example-svg.go
 ```

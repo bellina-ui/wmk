@@ -1,4 +1,4 @@
-package hal_glfw
+package wmk
 
 import (
 	"fmt"
@@ -38,7 +38,7 @@ func glfw_on_mouse_button(
 
 	} else {
 
-		fmt.Println("Unrecognized mouse button %i in hal-glfw/mouse.go", button)
+		fmt.Println("Unrecognized mouse button %i in wmk/mouse.go", button)
 		return
 	}
 
@@ -50,7 +50,7 @@ func glfw_on_mouse_button(
 
 	} else {
 
-		fmt.Println("Unrecognized action %i in hal-glfw/mouse.go", action)
+		fmt.Println("Unrecognized action %i in wmk/mouse.go", action)
 		return
 	}
 

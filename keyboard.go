@@ -1,4 +1,4 @@
-package hal_glfw
+package wmk
 
 import (
 	"fmt"
@@ -295,7 +295,7 @@ func glfw_on_key(
 		_key = hal.Key_APOSTROPHE
 
 	} else {
-		fmt.Println("Unrecognized key pressed %i", key)
+		fmt.Println("Unrecognized key pressed %i in wmk/keyboard.go", key)
 		return
 	}
 
@@ -309,7 +309,7 @@ func glfw_on_key(
 		_action = hal.Button_Action_DOWN
 
 	} else {
-		fmt.Println("Unrecognized key action %i in hal-glfw/keyboard.go", action)
+		fmt.Println("Unrecognized key action %i in wmk/keyboard.go", action)
 		return
 	}
 

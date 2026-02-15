@@ -1,4 +1,4 @@
-package hal_glfw
+package wmk
 
 import (
 	"fmt"
@@ -28,7 +28,7 @@ func create_window(title string) {
 
 	g_window.MakeContextCurrent()
 
-	fmt.Println("(+) GLFW Initialized (hal_glfw)")
+	fmt.Println("(+) GLFW Initialized (wmk)")
 
 	glfw.SwapInterval(0)
 

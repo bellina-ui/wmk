@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/bellina-ui/hal"
-	"github.com/bellina-ui/hal-glfw"
+	"github.com/bellina-ui/wmk"
 	"runtime"
 )
 
@@ -52,11 +52,11 @@ func init() {
 func main() {
 
 	// Create an 800 by 600 pixel window (is this 1997 again!)
-	hal_glfw.Init(100, 100, 800, 600)
+	wmk.Init(100, 100, 800, 600)
 
 	// Setup the callbacks
-	hal_glfw.Set_Callbacks(on_after_gl_initialized, on_loop, on_before_window_delete, on_resize, on_mouse_move, on_mouse_button, on_key)
+	wmk.Set_Callbacks(on_after_gl_initialized, on_loop, on_before_window_delete, on_resize, on_mouse_move, on_mouse_button, on_key)
 
 	// Start the loop!
-	hal_glfw.Loop("Hello, World!")
+	wmk.Loop("Hello, World!")
 }
