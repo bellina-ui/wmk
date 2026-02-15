@@ -10,7 +10,7 @@ Gives GoLang applications a Window with an OpenGL (glfw) context with callbacks 
 
 # why does `wmk` exist?
 
-`wmk` will be used by `hal-wmk` package to implement `hal` interface.
+`wmk` will be used by `hal-wmk` package to implement the `hal` interface.
 
 `hal-wmk` is used by the `Bellina UI Library`
 For examples and sample usage visit `github.com/bellina-ui/hal-wmk`
